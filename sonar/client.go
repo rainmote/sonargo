@@ -88,3 +88,7 @@ func NewClientByToken(endpoint, token string) (*Client, error) {
 	c.authType = privateToken
 	return c, err
 }
+
+func (c *Client) SetHttpClient(http *http.Client) {
+	c.httpClient = http
+}
