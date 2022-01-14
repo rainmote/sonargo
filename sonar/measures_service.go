@@ -55,6 +55,7 @@ type MeasuresComponentOption struct {
 	Component        string `url:"component,omitempty"`        // Description:"Component key",ExampleValue:"my_project"
 	ComponentId      string `url:"componentId,omitempty"`      // Description:"Component id",ExampleValue:"AU-Tpxb--iU5OvuD2FLy"
 	MetricKeys       string `url:"metricKeys,omitempty"`       // Description:"Comma-separated list of metric keys",ExampleValue:"ncloc,complexity,violations"
+	PullRequest      string `url:"pullRequest,omitempty"`
 }
 
 // Component Return component with specified measures. The componentId or the component parameter must be provided.<br>Requires the following permission: 'Browse' on the project of specified component.
